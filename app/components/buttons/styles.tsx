@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
         borderRadius: 12,           // Borda arredondada
         alignItems: "center",       // Alinhamento do texto
         justifyContent: "center",   // Alinhamento do texto
-        marginTop: 47,              // Margem superior
+        marginTop: 40,              // Margem superior
        
 
     },

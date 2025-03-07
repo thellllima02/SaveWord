@@ -16,14 +16,54 @@ export default function Desk() {
                 icon={<FontAwesome name="search" size={24} color="gray" />}
             />
             <Text style={styles.text2}>My Accounts</Text>
-            <View>
+            <KeyboardAvoidingView
+                behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+                style={{ flex: 1 }}
+            >
+                <ScrollView
+                    keyboardShouldPersistTaps="handled"
+                >
+                    <View>
+                    <Text>addsfARGAR34</Text>
+                    <Text>asd</Text>
+                    <Text>das</Text>
+                    <Text>das</Text>
+                    <Text>das</Text>
+                    <Text>das</Text>
+                    <Text>addsfARGAR34</Text>
+                    <Text>das</Text>
+                    <Text>das</Text>
+                    <Text>das</Text>
+                    <Text>das</Text>
+                    <Text>das</Text>
+                    <Text>das</Text>
+                    <Text>das</Text>
+                    <Text>das</Text>
+                    <Text>addsfARGAR34</Text>
+                    <Text>das</Text>
+                    <Text>das</Text>
+                    <Text>das</Text>                    
+                    <Text>das</Text>
+                    <Text>das</Text>
+                    <Text>addsfARGAR34</Text>
+                    <Text>das</Text>
+                    <Text>das</Text>
+                    <Text>das</Text>
+                    <Text>das</Text>
+                    <Text>das</Text>
+                    <Text>das</Text>
+                    <Text>das</Text>
+                    <Text>das</Text>
+                    <Text>das</Text>
+                    <Text>das</Text>
+                    <Text>das</Text>
 
-            </View>
-            <Link style={styles.sing} href="/screens/register">Register Accounts</Link>
+                    </View>
+                </ScrollView>
+            </KeyboardAvoidingView>
+            <Button title='Register Accounts' classButton='access' classTexto='texto' />
             <Link style={styles.sing} href="../../" > To go back</Link>
-            
-
-
         </View>
+
     );
 }

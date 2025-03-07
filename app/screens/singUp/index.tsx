@@ -1,4 +1,4 @@
-import { Text, View, TouchableOpacity } from 'react-native';
+import { TouchableOpacity, Text, View, ScrollView, KeyboardAvoidingView, Platform } from 'react-native';
 import styles from "./styles";
 import Input from "../../components/inputs";
 import Button from "../../components/buttons";
@@ -27,6 +27,13 @@ export default function SingUp() {
     }
 
     return (
+        <KeyboardAvoidingView
+            behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+            style={{ flex: 1 }}
+        >
+        <ScrollView
+            keyboardShouldPersistTaps="handled"
+        >
         <View style={styles.container}>
             <Text style={styles.text}>Sing Up</Text>
             <Input
@@ -69,6 +76,8 @@ export default function SingUp() {
 
             <Link style={styles.sing} href="../../" > To go back</Link>
         </View>
+        </ScrollView>
+        </KeyboardAvoidingView>
     );
 }
 

@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
         right: 90
     },
     sing: {
-        marginTop: 30,
+        margin: 20,
         fontSize: 20,
         color: '#3e3a3a'
     },
