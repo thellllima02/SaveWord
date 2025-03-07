@@ -16,8 +16,8 @@ export default function SingUp() {
     const [email, setEmail] = useState('');
     const [passwordVisible, setPasswordVisible] = useState(false);
 
-    const validaSing = () =>{
-        if(user.trim() === '' || password.trim() ==='' || confpassword.trim() ==='' || email.trim() ==='' ){
+    const validaSing = () => {
+        if (user.trim() === '' || password.trim() === '' || confpassword.trim() === '' || email.trim() === '') {
             alert('Preencha todos os campos');
             return;
         }
@@ -31,52 +31,52 @@ export default function SingUp() {
             behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
             style={{ flex: 1 }}
         >
-        <ScrollView
-            keyboardShouldPersistTaps="handled"
-        >
-        <View style={styles.container}>
-            <Text style={styles.text}>Sing Up</Text>
-            <Input
-                title=''
-                placeholder='User'
-                value={user}
-                onChangeText={setUser}
-                icon={<FontAwesome name="user" size={24} color="gray" />}
-            />
-            <Input
-                title=''
-                placeholder='Password'
-                value={password}
-                onChangeText={setPassword}
-                icon={<Ionicons name={passwordVisible ? "eye-off" : "eye"} size={24} color="gray" />}
-                secureTextEntry={!passwordVisible} // Ativa/desativa a máscara da senha
-                // Alterna o estado de visibilidade ao clicar no ícone
-                onIconPress={() => setPasswordVisible(prev => !prev)}
-            />
-            <Input
-                title=''
-                placeholder='Confirm Password'
-                value={confpassword}
-                onChangeText={setConfPassword}
-                icon={<Ionicons name={passwordVisible ? "eye-off" : "eye"} size={24} color="gray" />}
-                secureTextEntry={!passwordVisible} // Ativa/desativa a máscara da senha
-                // Alterna o estado de visibilidade ao clicar no ícone
-                onIconPress={() => setPasswordVisible(prev => !prev)}
-            />
-            <Input
-                title=''
-                placeholder='Email'
-                value={email}
-                onChangeText={setEmail}
-                icon={<FontAwesome name="envelope" size={24} color="gray" />}
-            />
+            <ScrollView
+                keyboardShouldPersistTaps="handled"
+            >
+                <View style={styles.container}>
+                    <Text style={styles.text}>Sing Up</Text>
+                    <Input
+                        title=''
+                        placeholder='User'
+                        value={user}
+                        onChangeText={setUser}
+                        icon={<FontAwesome name="user" size={24} color="gray" />}
+                    />
+                    <Input
+                        title=''
+                        placeholder='Password'
+                        value={password}
+                        onChangeText={setPassword}
+                        icon={<Ionicons name={passwordVisible ? "eye-off" : "eye"} size={24} color="gray" />}
+                        secureTextEntry={!passwordVisible} // Ativa/desativa a máscara da senha
+                        // Alterna o estado de visibilidade ao clicar no ícone
+                        onIconPress={() => setPasswordVisible(prev => !prev)}
+                    />
+                    <Input
+                        title=''
+                        placeholder='Confirm Password'
+                        value={confpassword}
+                        onChangeText={setConfPassword}
+                        icon={<Ionicons name={passwordVisible ? "eye-off" : "eye"} size={24} color="gray" />}
+                        secureTextEntry={!passwordVisible} // Ativa/desativa a máscara da senha
+                        // Alterna o estado de visibilidade ao clicar no ícone
+                        onIconPress={() => setPasswordVisible(prev => !prev)}
+                    />
+                    <Input
+                        title=''
+                        placeholder='Email'
+                        value={email}
+                        onChangeText={setEmail}
+                        icon={<FontAwesome name="envelope" size={24} color="gray" />}
+                    />
 
 
-            <Button title='Accepted' classButton='access' classTexto='texto' onPress={validaSing}/>
+                    <Button title='Accepted' classButton='access' classTexto='texto' onPress={validaSing} />
 
-            <Link style={styles.sing} href="../../" > To go back</Link>
-        </View>
-        </ScrollView>
+                    <Link style={styles.sing} href="../../" > To go back</Link>
+                </View>
+            </ScrollView>
         </KeyboardAvoidingView>
     );
 }
