@@ -9,14 +9,6 @@ import Button from "./components/buttons";
 
 export default function HomeScreen() {
   function desktop(){
-    router.navigate("./screens/desk")
-  }
-  const [user, setUser] = useState('');
-  const [password, setPassword] = useState('');
-  const [passwordVisible, setPasswordVisible] = useState(false);
-  const [isChecked, setChecked] = useState(false);
-
-  const validaLogin = () => {
     if (user.trim() === '' || password.trim() === '') {
       alert('Usuario ou senha são obrigatorios');
       return;
@@ -24,7 +16,12 @@ export default function HomeScreen() {
     alert('Login efetuado com sucesso');
     setUser('');
     setPassword('');
+    router.navigate("./screens/desk")
   }
+  const [user, setUser] = useState('');
+  const [password, setPassword] = useState('');
+  const [passwordVisible, setPasswordVisible] = useState(false);
+  const [isChecked, setChecked] = useState(false);
 
   return (
     <KeyboardAvoidingView
