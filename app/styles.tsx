@@ -17,14 +17,9 @@ remenber:{
     marginLeft: 5  
 },
 Checkbox: {
-    marginTop: 50,
+    marginTop: 10,
     flexDirection: 'row',
     marginRight: 130
-},
-errorText: {
-    color: 'red',
-    fontSize: 14,
-    marginTop: 5,
 },
 sing: {
     marginTop: 50,

@@ -4,7 +4,7 @@ import { theme } from "../../../theme";
 const styles = StyleSheet.create({
     botao: {
         paddingVertical: 12,        // Espaçamento vertical
-        paddingHorizontal: 72,      // Espaçamento horizontal
+        paddingHorizontal: 60,      // Espaçamento horizontal
         borderRadius: 12,           // Borda arredondada
         alignItems: "center",       // Alinhamento do texto
         justifyContent: "center",   // Alinhamento do texto

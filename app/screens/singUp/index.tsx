@@ -28,7 +28,7 @@ export default function SingUp() {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.text}>Register</Text>
+            <Text style={styles.text}>Sing Up</Text>
             <Input
                 title=''
                 placeholder='User'
@@ -65,7 +65,7 @@ export default function SingUp() {
             />
 
 
-            <Button title='Sing Up' classButton='access' classTexto='texto' onPress={validaSing}/>
+            <Button title='Accepted' classButton='access' classTexto='texto' onPress={validaSing}/>
 
             <Link style={styles.sing} href="../../" > To go back</Link>
         </View>

@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     paddingRight: 40, // Espaço para o ícone
     borderWidth: 1,
     borderColor: '#ccc',
-    borderRadius: 8,
+    borderRadius: 11,
   },
 
   iconContainer: {
